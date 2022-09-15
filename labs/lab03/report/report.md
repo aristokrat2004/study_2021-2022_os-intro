@@ -1,8 +1,11 @@
 ---
 ## Front matter
+lang: ru-RU
 title: "Лабораторная работа №3"
 subtitle: "Дисциплина: Операционные системы"
 author: "Кондратьев Арсений Вячеславович"
+institute: "Российский университет дружбы народов, Москва, Россия"
+date: 14.09.2022
 
 ## Generic otions
 lang: ru-RU
@@ -15,8 +18,7 @@ csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
 ## Pdf output format
 toc: true # Table of contents
 toc-depth: 2
-lof: true # List of figures
-lot: true # List of tables
+
 fontsize: 12pt
 linestretch: 1.5
 papersize: a4
@@ -51,13 +53,8 @@ biblatexoptions:
   - language=auto
   - autolang=other*
   - citestyle=gost-numeric
-## Pandoc-crossref LaTeX customization
-figureTitle: "Рис."
-tableTitle: "Таблица"
-listingTitle: "Листинг"
-lofTitle: "Список иллюстраций"
-lotTitle: "Список таблиц"
-lolTitle: "Листинги"
+
+
 ## Misc options
 indent: true
 header-includes:
@@ -124,7 +121,7 @@ sudo ./gitflow-installer.sh install stable
 sudo dnf install gh
 ```
     
- ![Рис. 3](image/3Снимок.PNG){ #fig:004 width=70% }
+ ![Рис. 3](image/3Снимок.PNG){ #fig:003 width=70% }
  
 4. Выполнил базовую настройку Git(рис.[-@fig:004])
 
@@ -169,6 +166,7 @@ gpg --armor --export <PGP Fingerprint> | xclip -sel clip
 ```
 
  ![Рис. 8](image/8Снимок.PNG){ #fig:008 width=70% }
+
  ![Рис. 9](image/9Снимок.PNG){ #fig:009 width=70% }
  
 9. Настроил автоматические подписи коммитов git(рис.[-@fig:010])
